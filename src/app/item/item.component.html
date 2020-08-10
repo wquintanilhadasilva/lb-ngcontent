@@ -1,0 +1,10 @@
+<!-- <ng-content></ng-content>
+<h3>Título do item</h3>
+<p>Descrição do item</p> -->
+<div class="item">
+  <h1>
+      <ng-content></ng-content>
+      {{ item.title }}
+  </h1>
+  <p>{{ item.description }}</p>
+</div>

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Item } from './item/item';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'lab-ngcontent';
+
+  itens: Item[] = [
+    {checked: false, description: 'Lorem Ipsum...', title: 'Item 1'},
+    {checked: true, description: 'Lorem Ipsum...', title: 'Item 2'},
+    {checked: false, description: 'Lorem Ipsum...', title: 'Item 3'},
+    {checked: true, description: 'Lorem Ipsum...', title: 'Item 4'},
+  ];
+
 }
